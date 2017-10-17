@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Chelsea Market' rel='stylesheet'>
+  <title>School Finder</title>
+  <style>
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 700;
+    }
+
+    .intro-header {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+      color: #f8f8f8;
+      background-image: url('http://s3.india.com/wp-content/uploads/2014/03/writing-student.jpg') ;
+     /* background: url(intro-bg.jpg) no-repeat center center;*/
+      background-size: cover;
+    }
+    body{
+     
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+    }
+    
+    .intro-message {
+      position: relative;
+      padding-top: 20%;
+      padding-bottom: 20%;
+    }
+
+    .intro-message>h1 {
+      margin: 0;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+      font-size: 5em;
+    }
+
+    .intro-divider {
+      width: 600px;
+      border-top: 1px solid #f8f8f8;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .intro-message>h3 {
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    .intro-social-buttons i {
+      font-size: 80%;
+    }
+
+    @media(max-width:767px) {
+      .intro-message {
+        padding-bottom: 15%;
+      }
+      .intro-message>h1 {
+        font-size: 3em;
+      }
+      ul.intro-social-buttons>li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+      }
+      ul.intro-social-buttons>li:last-child {
+        margin-bottom: 0;
+      }
+      .intro-divider {
+        width: 100%;
+      }
+    }
+
+    .network-name {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+
+    footer {
+      padding: 50px 0;
+      background-color: #f8f8f8;
+    }
+
+    p.copyright {
+      margin: 15px 0 0;
+    }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#" style="font-family: 'Chelsea Market';font-size: 22px;">School Finder</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <header class="intro-header">
+    <div class="container">
+      <div class="intro-message">
+        <h1>School Finder</h1>
+        <h3>...where your dreams for your children begin!</h3>
+        <hr class="intro-divider">
+        <ul class="list-inline intro-social-buttons">
+          <li class="list-inline-item">
+            <a routerLink="/icse" class="btn btn-secondary btn-lg">
+              <span class="network-name">ICSE</span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a routerLink="/cbse" class="btn btn-secondary btn-lg">
+              <span class="network-name">CBSE</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!--<body>
+    <router-outlet> </router-outlet>
+   </body> -->
+   <br>
+   <br>
+   <br>
+   <footer style="background-color: gainsboro">
+      <div class="container">
+          <ul class="list-inline">
+              <li class="list-inline-item">
+                  <a href="#">Home</a>
+              </li>
+              <li class="footer-menu-divider list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                  <a href="#faq">FAQ</a>
+              </li>
+              <li class="footer-menu-divider list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                  <a href="#terms">Terms and Conditions</a>
+              </li>
+              <li class="footer-menu-divider list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                  <a href="#terms">Contact</a>
+              </li>
+          </ul>
+          <p class="copyright text-muted small">Copyright &copy; SchoolFinder.com 2017. All Rights Reserved</p>
+      </div>
+  </footer>
+
+ <!-- <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>-->
+</body>
+
+</html>

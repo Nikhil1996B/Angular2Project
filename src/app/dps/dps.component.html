@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>National public school</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .jumbo {
+      height: 400px;
+      width: 100%;
+      max-height: 100%;
+      max-width: 100%;
+      min-height: 20%;
+      min-width: 30%;
+      background-image: url("https://www.theindianwire.com/wp-content/uploads/2017/04/DPS-Bangalore-North-1-990x556.gif");
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body align="center">
+  <div class="row jumbo">
+    <div class="col-md-12 col-sm-12">
+      <br>
+      <br>
+      <h1 style="color:#563421">Delhi Public School, Bangalore North</h1>
+    </div>
+  </div>
+
+  <div class="container" align="left">
+    <div class="row">
+      <div class="col-md-6 col-xs-6">
+        <h3>About Delhi Public School, Bangalore North</h3>
+        <p>Delhi Public School, Bangalore North is a school located in Bangalore, India, and established in 1959 [1]
+          by K. P. Gopalkrishna. Its main campus is in yelahanka. The campus comprises four
+          buildings which house the classrooms, labs and auditorium. </p>
+      </div>
+      <div class="col-md-6 col-xs-6">
+        <h3>Life at Delhi Public School, Bangalore North</h3>
+        <p>
+          The school possesses an auditorium. Inside the auditorium is a concrete badminton court. Table tennis is also played there.
+          The school has a science laboratory, and a computer laboratory with computing facilities for over eighty students
+          apart from an Audio Visual room, Smartboard room and a resource room. The Physical Education department is responsible
+          for the enforcement of health and safety regulations in the school campus. First aid is administered for minor
+          maladies; for major medical problems the student is transferred to hospital by ambulance.
+        </p>
+      </div>
+    </div>
+
+    <div class="container" align="right">
+
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Register</button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title" align="center">DPS Registration page</h3>
+            </div>
+            <div class="modal-body" align="left">
+
+              <form>
+                <div class="form-group">
+                  <label for="name">Student name</label>
+                  <input type="text" id="name" class="form-control" placeholder="Name of the student" />
+                </div>
+                <div class="form-group">
+                  <label for="age">Student Age</label>
+                  <input type="number" id="age" class="form-control" placeholder="Age of the student" maxlength="2" />
+                </div>
+                <div class="form-group">
+                  <label for="fname">Father's Name</label>
+                  <input type="text" id="fname" class="form-control" placeholder="Name of the Father" />
+                </div>
+                <div class="form-group">
+                  <label for="mname">Mother's Name</label>
+                  <input type="text" id="fname" class="form-control" placeholder="Name of the Mother" />
+                </div>
+                <div class="form-group">
+                  <label for="standard">Standard</label>
+                  <select id="standard" class="form-control" #std (change)="feeCalc(std.value)">
+                    <option></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="btn btn-success btn-block" value="Enroll" />
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer">
+              <h3>Total Amount</h3>
+              <h4>
+                RS {{amount}}
+              </h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
